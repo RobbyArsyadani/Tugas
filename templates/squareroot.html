@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>This program to find the squre root</h2>
+   
+        <input type="number" id="angka">
+        <button id="otak" onclick="squareroot()">Submit</button>
+    
+    <p id="demo"></p>
+    <p></p>
+    <a href="/">back</a>
+    
+<script>
+    function squareroot(){
+    var num = document.getElementById('angka').value ;
+    var result = Math.sqrt(num)    
+
+
+    document.getElementById('demo').innerHTML = "The Square root of " + num + " is " + result;
+
+}
+</script>
+</body>
+</html>
