@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phytagoras</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>This program to find hypotenuse of triangle</h1>
+
+    <img src="http://belajarkalkulus.com/wp-content/uploads/2017/11/kalkulus-121.jpg" alt="">
+    <p></p>
+    <label for="front">AB length</label>
+    <input type="number" id="front">
+    <p></p>
+    <label for="side">BC Length</label>
+    <input type="number" id="side">
+    <p></p>
+    <button id="o" onclick="pitagoras()">Submit</button>
+    <p id="demo"></p>
+
+    <p></p>
+    <a href="/">back</a>
+    <script>
+        function pitagoras(){
+   let k = document.getElementById('front').value;
+   let l = document.getElementById('side').value;
+
+
+
+   result = parseInt(k**2) + parseInt(l**2);
+   final = Math.sqrt(result);
+
+   document.getElementById('demo').innerHTML = "The hypotenusa from this triangle is " + final;
+}
+    </script>
+</body>
+</html>
