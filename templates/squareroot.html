@@ -9,9 +9,12 @@
 <body>
 
     <h2>This program to find the squre root</h2>
-   
-        <input type="number" id="angka">
-        <button id="otak" onclick="squareroot()">Submit</button>
+    <form action="/squareroot" method="POST">
+    <label for="angka">Enter the number</label>    
+    <input type="number" id="angka" name="angka">
+    <input type="submit" value="submit">
+    </form>
+        
     
     <p id="demo"></p>
     <p></p>
