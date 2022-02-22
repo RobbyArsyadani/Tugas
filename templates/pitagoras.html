@@ -10,31 +10,20 @@
 <body>
     <h1>This program to find hypotenuse of triangle</h1>
 
-    <img src="http://belajarkalkulus.com/wp-content/uploads/2017/11/kalkulus-121.jpg" alt="">
+    <img src="http://belajarkalkulus.com/wp-content/uploads/2017/11/kalkulus-121.jpg">
     <p></p>
+    <form action="/pitagoras" method="POST">
     <label for="front">AB length</label>
-    <input type="number" id="front">
-    <p></p>
+    <input type="number" id="front" name="front">
+    <br>
     <label for="side">BC Length</label>
-    <input type="number" id="side">
-    <p></p>
-    <button id="o" onclick="pitagoras()">Submit</button>
-    <p id="demo"></p>
+    <input type="number" id="side" name="side">
+    <br>
+    <input type="submit" value="submit">
+    </form>
 
     <p></p>
     <a href="/">back</a>
-    <script>
-        function pitagoras(){
-   let k = document.getElementById('front').value;
-   let l = document.getElementById('side').value;
-
-
-
-   result = parseInt(k**2) + parseInt(l**2);
-   final = Math.sqrt(result);
-
-   document.getElementById('demo').innerHTML = "The hypotenusa from this triangle is " + final;
-}
-    </script>
+   
 </body>
 </html>
